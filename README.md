@@ -2,6 +2,17 @@
 
 ------
 
+
+<div align="center">
+
+  <img src="/img/menu.png" width=70%>
+
+  <img src="/img/example-output.png" width=70%>
+
+</div>
+
+------
+
 **Lernziele**
 
 - Transformieren von csv-Daten in PoCo's (Models) mit Linq
@@ -16,13 +27,13 @@
 |Name|Beschreibung|
 |---|---|
 |MusicStore.ConApp|Eine Konsolen-Anwendung zum Laden der csv-Daten und zum Ausgeben der Kennzahlen.|
-|MusicStore.Logic|In diesem Projekt sind alle Schnittstellen, Models und Geschäftslogiken von MusicStore implementiert.|
+|MusicStore.Logic|In diesem Projekt sind alle Schnittstellen, Models und Geschï¿½ftslogiken von MusicStore implementiert.|
 |MusicStore.Logic.Contracts|In diesem Abschnitt befinden sich alle Schnittstellen.|
 |MusicStore.Logic.Models|In diesem Abschnitt befinden sich alle Daten-Objekte (PoCo).|
 |MusicStore.Logic.DataContext|In diesem Abschnitt befindet sich der Daten-Kontext (`MusicStroeContext`). Diese transformiert die csv-Daten in die in die Daten-Objekte und stellt einen Zugriff auf diese Objekte bereit.|
-|MusicStore.Logic.Statistics|In diesem Abschnitt befindet sich die Logik zur Auswertung der Statistik. Die Klasse hat den Namen `MusicStoreStatistics` und stellt die verschiedenen Methoden zur Abfrage der Statistik-Kennzahlen zur Verfügung.|
+|MusicStore.Logic.Statistics|In diesem Abschnitt befindet sich die Logik zur Auswertung der Statistik. Die Klasse hat den Namen `MusicStoreStatistics` und stellt die verschiedenen Methoden zur Abfrage der Statistik-Kennzahlen zur Verfï¿½gung.|
 
-Verbinden Sie die Abhängigkeiten der einzelnen Projekte untereinander.
+Verbinden Sie die Abhï¿½ngigkeiten der einzelnen Projekte untereinander.
 
 **Funktionsumfang** Laden Sie die csv-Daten in das Objektmodell und ermitteln Sie die statistischen Kennzahlen mit Linq.
 
@@ -42,7 +53,7 @@ Verbinden Sie die Abhängigkeiten der einzelnen Projekte untereinander.
 
 ### Testen des Systems
 
-Überprüfen Sie die Kennzahlen mit Excel!
+ï¿½berprï¿½fen Sie die Kennzahlen mit Excel!
 
 ## Hilfsmitteln
 
