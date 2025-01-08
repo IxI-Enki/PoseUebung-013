@@ -13,7 +13,7 @@
 
 <div align="center">
 
-  <img src="/img/example-output.png" width=70%>
+<!--  <img src="/img/example-output.png" width=70%> -->
 </div>
 
 ------
