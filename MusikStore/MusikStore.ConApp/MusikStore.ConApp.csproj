@@ -11,4 +11,19 @@
     <ProjectReference Include="..\MusikStore.Logic\MusikStore.Logic.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\Albums.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Artists.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Genres.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Tracks.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
