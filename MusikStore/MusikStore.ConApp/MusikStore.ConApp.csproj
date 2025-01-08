@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MusikStore.Logic\MusikStore.Logic.csproj" />
+  </ItemGroup>
+
 </Project>
