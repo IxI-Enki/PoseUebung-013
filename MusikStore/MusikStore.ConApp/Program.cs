@@ -1,7 +1,4 @@
-﻿using MusicStore.Logic;
-using MusicStore.Logic.DataContext;
-
-namespace MusicStore.ConApp;
+﻿namespace MusikStore.ConApp;
 
 internal class Program
 {
@@ -9,6 +6,7 @@ internal class Program
         {
                 int index = 1;
                 string input = string.Empty;
+
                 MusicStoreContext context = new();
 
                 // PrintGenres(context);
@@ -20,15 +18,15 @@ internal class Program
                         Console.WriteLine("         MusicStore         ".BackgroundColor("45,225,110").ForegroundColor("black"));
                         Console.WriteLine("============================\n".ForegroundColor("45,225,110"));
 
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintArtistAndAlbum)}....{index++}".ForegroundColor("0,255,155"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintArtistAndTracks)}...{index++}".ForegroundColor("15,245,140"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintArtistAndTimes)}....{index++}".ForegroundColor("30,235,125"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintAlbumAndTracks)}....{index++}".ForegroundColor("45,225,110"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintAlbumAndTimes)}.....{index++}".ForegroundColor("60,215,95"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintAverageByGenre)}....{index++}".ForegroundColor("75,205,80"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintAverageByAlbum)}....{index++}".ForegroundColor("90,195,65"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintAverageByTrack)}....{index++}".ForegroundColor("105,185,50"));
-                        Console.WriteLine($"{nameof(Logic.Statistics.MusicStoreStatistics.PrintGenreAndTitles)}....{index++}".ForegroundColor("120,175,35"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintArtistAndAlbum)}....{index++}".ForegroundColor("0,255,155"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintArtistAndTracks)}...{index++}".ForegroundColor("15,245,140"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintArtistAndTimes)}....{index++}".ForegroundColor("30,235,125"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintAlbumAndTracks)}....{index++}".ForegroundColor("45,225,110"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintAlbumAndTimes)}.....{index++}".ForegroundColor("60,215,95"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintAverageByGenre)}....{index++}".ForegroundColor("75,205,80"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintAverageByAlbum)}....{index++}".ForegroundColor("90,195,65"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintAverageByTrack)}....{index++}".ForegroundColor("105,185,50"));
+                        Console.WriteLine($"{nameof(MusicStoreStatistics.PrintGenreAndTitles)}....{index++}".ForegroundColor("120,175,35"));
 
                         Console.WriteLine();
                         Console.WriteLine($"Exit...................x".ForegroundColor("red"));
@@ -39,36 +37,36 @@ internal class Program
                         if (input == string.Empty)
                                 index = 1;
 
-                        if (Int32.TryParse(input , out int choice))
+                        if (int.TryParse(input , out int choice))
                         {
                                 switch (choice)
                                 {
                                         case 1:
-                                                Logic.Statistics.MusicStoreStatistics.PrintArtistAndAlbum(context);
+                                                MusicStoreStatistics.PrintArtistAndAlbum(context);
                                                 break;
                                         case 2:
-                                                Logic.Statistics.MusicStoreStatistics.PrintArtistAndTracks(context);
+                                                MusicStoreStatistics.PrintArtistAndTracks(context);
                                                 break;
                                         case 3:
-                                                Logic.Statistics.MusicStoreStatistics.PrintArtistAndTimes(context);
+                                                MusicStoreStatistics.PrintArtistAndTimes(context);
                                                 break;
                                         case 4:
-                                                Logic.Statistics.MusicStoreStatistics.PrintAlbumAndTracks(context);
+                                                MusicStoreStatistics.PrintAlbumAndTracks(context);
                                                 break;
                                         case 5:
-                                                Logic.Statistics.MusicStoreStatistics.PrintAlbumAndTimes(context);
+                                                MusicStoreStatistics.PrintAlbumAndTimes(context);
                                                 break;
                                         case 6:
-                                                Logic.Statistics.MusicStoreStatistics.PrintAverageByGenre(context);
+                                                MusicStoreStatistics.PrintAverageByGenre(context);
                                                 break;
                                         case 7:
-                                                Logic.Statistics.MusicStoreStatistics.PrintAverageByAlbum(context);
+                                                MusicStoreStatistics.PrintAverageByAlbum(context);
                                                 break;
                                         case 8:
-                                                Logic.Statistics.MusicStoreStatistics.PrintAverageByTrack(context);
+                                                MusicStoreStatistics.PrintAverageByTrack(context);
                                                 break;
                                         case 9:
-                                                Logic.Statistics.MusicStoreStatistics.PrintGenreAndTitles(context);
+                                                MusicStoreStatistics.PrintGenreAndTitles(context);
                                                 break;
                                         default:
                                                 break;

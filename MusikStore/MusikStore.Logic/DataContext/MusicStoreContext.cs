@@ -1,4 +1,4 @@
-﻿namespace MusicStore.Logic.DataContext;
+﻿namespace MusikStore.Logic.DataContext;
 
 /// <summary>
 /// Represents the data context for the Music Store application.
@@ -102,6 +102,7 @@ public sealed class MusicStoreContext
                                         Id = Convert.ToInt32(e[ 0 ]) ,
                                         Title = e[ 1 ] ,
                                         ArtistId = Convert.ToInt32(e[ 2 ]) ,
+
                                         Artist = artists.First(a => a.Id == Convert.ToInt32(e[ 2 ])) ,
                                 }).ToList();
                 return result;

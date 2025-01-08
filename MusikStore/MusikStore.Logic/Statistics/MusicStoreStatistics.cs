@@ -1,6 +1,4 @@
-﻿using MusicStore.Logic.Models;
-
-namespace MusicStore.Logic.Statistics;
+﻿namespace MusikStore.Logic.Statistics;
 
 public static class MusicStoreStatistics
 {
@@ -196,6 +194,7 @@ public static class MusicStoreStatistics
                 Console.WriteLine();
                 Console.WriteLine("       Average Tracktime of all Tracks        ".ForegroundColor("40,255,200"));
                 Console.WriteLine("----------------------------------------------".ForegroundColor("green"));
+
                 Console.WriteLine($"{query / 1000.0,10:f2}".ForegroundColor("20,255,120") + "[sec]");
         }
 
