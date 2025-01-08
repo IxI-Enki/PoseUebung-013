@@ -126,7 +126,7 @@ public static class MusicStoreStatistics
                      .ForEach(a =>
                      {
                              Console.WriteLine(a.Key.ForegroundColor("green"));
-                             Console.WriteLine($"  {a.Average(e => e.AlbumTime) / 1000.0,20:f2}".ForegroundColor("20,255,120") + "[sec]");
+                             Console.WriteLine($"  {a.Sum(e => e.AlbumTime) / 1000.0,20:f2}".ForegroundColor("20,255,120") + "[sec]");
                              Console.WriteLine();
                      });
         }
@@ -152,7 +152,7 @@ public static class MusicStoreStatistics
                      .ForEach(a =>
                      {
                              Console.WriteLine($"{a.Key}".ForegroundColor("20,120,255"));
-                             Console.WriteLine($"  {a.Sum(e => e.GenreTime) / 1000.0,20:f2}".ForegroundColor("20,255,120") + "[sec]");
+                             Console.WriteLine($"  {a.Average(e => e.GenreTime) / 1000.0,20:f2}".ForegroundColor("20,255,120") + "[sec]");
                              Console.WriteLine();
                      });
         }
