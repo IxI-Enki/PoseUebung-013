@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MusikStore/.vs/MusikStore
+/MusikStore/MusikStore.ConApp/obj
+/MusikStore/MusikStore.Logic/bin/Debug/net8.0
+/MusikStore/MusikStore.Logic/obj
