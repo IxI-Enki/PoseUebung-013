@@ -5,8 +5,10 @@
 
 <div align="center">
 
+- Finished Menu: 
   <img src="/img/menu.png" width=70%>
 
+- Example Output:
   <img src="/img/example-output.png" width=70%>
 
 </div>
